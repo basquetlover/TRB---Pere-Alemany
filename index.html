@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>TRB Pere Alemany</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="Pere-icon.png" sizes="750x750" />
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+  <script src="script.js"></script>
+  <script src="konami-code.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+  <div class="loader" id="loader">
+    <div class="loader-img">
+    <img src="Pere-icon.png" alt="foto perfil">
+    </div>
+    <div class="loader-order">
+    <p>TRB | Pere Alemany</p>
+
+    </div>
+  </div>
+  <div class="btn-descarga-noti spawn" id="btn-descarga-noti">
+
+    <div class="noti-order">
+    <div class="noti-simbol">
+      <span class="material-symbols-outlined">
+      warning
+      </span>
+    </div>
+    <div class="noti-text"><p>El modelo puede tardar varios segundos en cargar</p></div>
+    </div>
+  </div>
+  <div class="modelo">
+    <model-viewer
+      alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum"
+      src="drone-TRB-web.glb" shadow-intensity="1" camera-controls touch-action="pan-z"></model-viewer>
+    <!-- <model-viewer alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum" src="3dpea.glb" ar environment-image="shared-assets/environments/moon_1k.hdr" poster="shared-assets/models/NeilArmstrong.webp" shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer> -->
+  </div>
+  <section class="info" id="info">
+  <h1>TRB - Estudi i disseny d’un dron per a esdeveniments</h1>
+  <h2>Pere Alemany Tomàs</h2>
+  </section>
+  
+</body>
+
+</html>
