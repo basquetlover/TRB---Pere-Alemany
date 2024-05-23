@@ -194,7 +194,8 @@ footer{
     height: 235;
   
     svg{
-      fill: var(--blanco);
+      fill: var(--naranja_oscuro);
+      color: var(--naranja_claro);
     }
   }
 
