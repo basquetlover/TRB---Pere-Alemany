@@ -2,6 +2,7 @@
 *{
   margin: 0;
   text-decoration: none;
+  font-family: "Libre Franklin", sans-serif;
 }
 .material-symbols-outlined {
   font-variation-settings:
@@ -145,7 +146,7 @@ footer{
   background-image: url('img/fondo-modeloTRB.avif');
   background-size: cover; 
   background-repeat: no-repeat; 
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
 
   display: flex;
   flex-direction: column;
@@ -215,7 +216,8 @@ footer{
     }
 
     p{
-      font-size: 20px;
+      margin-top: 20px;
+      font-size: 16px;
       color: var(--blanco);
     }
   }
