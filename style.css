@@ -438,6 +438,9 @@ footer{
   header{
     grid-area: header;
     width: 100%;
+    img{
+      display: none;
+    }
   }
   
   main{
