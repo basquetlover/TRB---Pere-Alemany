@@ -54,6 +54,14 @@ body{
 header{
   grid-area: header;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img{
+    width: 100px;
+    height: 100px;
+  }
 }
 
 main{
@@ -147,7 +155,7 @@ footer{
   width: 100%;
   height: 800px;
 
-  margin: 20px 0;
+  margin-bottom: 20px;
   padding: 0;
 
   background-image: url('img/fondo-modeloTRB.avif');
