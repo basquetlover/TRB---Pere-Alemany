@@ -410,19 +410,45 @@ footer{
   .logo-ies-anim::after {
     content: '';
     position: absolute;
-    top: 40px;
+    top: 30px;
     left: 0;
-    width: 235px;
-    height: 135px;
+    width: 135px;
+    height: 70px;
     
     z-index: -100;
     opacity: 0;
     transition: all 0.3s;
-    border: 1px solid var(--naranja_claro);
+    border: 2px solid var(--naranja_claro);
+    border-bottom: none;
+    border-right: none;
+    border-top-left-radius: 10px;
     transform: scale(1,1);
     cursor: pointer;
   }
   .logo-ies-anim:hover::after {
+    opacity: 1;
+    transform: scale(1.2,1.2);
+  }
+
+  .logo-ies-anim::before{
+    content: '';
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    width: 135px;
+    height: 70px;
+    
+    z-index: -100;
+    opacity: 0;
+    transition: all 0.3s;
+    border: 2px solid var(--naranja_claro);
+    border-top: none;
+    border-left: none;
+    border-bottom-right-radius: 10px;
+    transform: scale(1,1);
+    cursor: pointer;
+  }
+  .logo-ies-anim:hover::before{
     opacity: 1;
     transform: scale(1.2,1.2);
   }
@@ -482,13 +508,16 @@ footer{
     position: absolute;
     top: 0px;
     left: 0;
-    width: 235px;
-    height: 90px;
+    width: 100px;
+    height: 50px;
     
     z-index: -100;
     opacity: 0;
     transition: all 0.3s;
-    border: 1px solid var(--naranja_claro);
+    border: 2px solid var(--naranja_claro);
+    border-bottom: none;
+    border-right: none;
+    border-top-left-radius: 10px;
     transform: scale(1,1);
     cursor: pointer;
   }
@@ -496,6 +525,30 @@ footer{
     opacity: 1;
     transform: scale(1.2,1.2);
   }
+
+  .host-anim::before {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    width: 100px;
+    height: 50px;
+    
+    z-index: -100;
+    opacity: 0;
+    transition: all 0.3s;
+    border: 2px solid var(--naranja_claro);
+    border-top: none;
+    border-left: none;
+    border-bottom-right-radius: 10px;
+    transform: scale(1,1);
+    cursor: pointer;
+  }
+  .host-anim:hover::before {
+    opacity: 1;
+    transform: scale(1.2,1.2);
+  }
+
 
   hr{
     display: none;
@@ -801,22 +854,49 @@ footer{
       transition: all 0.5s;
       position: relative;
     }
+
     .logo-ies-anim::after {
       content: '';
       position: absolute;
-      top: 40px;
+      top: 20px;
       left: 0;
-      width: 235px;
-      height: 135px;
+      width: 135px;
+      height: 70px;
       
       z-index: -100;
       opacity: 0;
       transition: all 0.3s;
-      border: 1px solid var(--naranja_claro);
+      border: 2px solid var(--naranja_claro);
+      border-bottom: none;
+      border-right: none;
+      border-top-left-radius: 10px;
       transform: scale(1,1);
       cursor: pointer;
     }
     .logo-ies-anim:hover::after {
+      opacity: 1;
+      transform: scale(1.2,1.2);
+    }
+
+    .logo-ies-anim::before{
+      content: '';
+      position: absolute;
+      bottom: 20px;
+      right: 0;
+      width: 135px;
+      height: 70px;
+      
+      z-index: -100;
+      opacity: 0;
+      transition: all 0.3s;
+      border: 2px solid var(--naranja_claro);
+      border-top: none;
+      border-left: none;
+      border-bottom-right-radius: 10px;
+      transform: scale(1,1);
+      cursor: pointer;
+    }
+    .logo-ies-anim:hover::before{
       opacity: 1;
       transform: scale(1.2,1.2);
     }
@@ -887,17 +967,43 @@ footer{
       position: absolute;
       top: 0px;
       left: 0;
-      width: 235px;
-      height: 90px;
+      width: 100px;
+      height: 50px;
       
       z-index: -100;
       opacity: 0;
       transition: all 0.3s;
-      border: 1px solid var(--naranja_claro);
+      border: 2px solid var(--naranja_claro);
+      border-bottom: none;
+      border-right: none;
+      border-top-left-radius: 10px;
       transform: scale(1,1);
       cursor: pointer;
     }
     .host-anim:hover::after {
+      opacity: 1;
+      transform: scale(1.2,1.2);
+    }
+
+    .host-anim::before {
+      content: '';
+      position: absolute;
+      bottom: 0px;
+      right: 0;
+      width: 100px;
+      height: 50px;
+      
+      z-index: -100;
+      opacity: 0;
+      transition: all 0.3s;
+      border: 2px solid var(--naranja_claro);
+      border-top: none;
+      border-left: none;
+      border-bottom-right-radius: 10px;
+      transform: scale(1,1);
+      cursor: pointer;
+    }
+    .host-anim:hover::before {
       opacity: 1;
       transform: scale(1.2,1.2);
     }
