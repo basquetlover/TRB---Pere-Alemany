@@ -60,6 +60,9 @@ main{
   grid-area: main;
   width: 100%;
   height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 footer{
   grid-area: footer;
@@ -141,7 +144,7 @@ footer{
   width: 100%;
   height: 800px;
 
-  margin: 0;
+  margin: 20px 0;
   padding: 0;
 
   background-image: url('img/fondo-modeloTRB.avif');
@@ -173,6 +176,98 @@ footer{
     -webkit-text-stroke-color: white;
   }
 
+}
+
+.introduccion{
+  margin: 20px 0;
+  width: 90%;
+  height: auto;
+  overflow: unset;
+  position: relative;
+
+  display: grid;
+    grid-template-columns: 1fr 400px;
+    grid-template-rows: 1fr;
+    place-items: center;
+  
+
+  div{
+    width: 100%;
+    height: auto;
+
+    h3{
+      position: absolute;
+      top: 10px;
+      font-size: 40px;
+      color: var(--naranja_oscuro);
+    }
+    
+    p{
+      width: 95%;
+      font-size: 20px;
+      color: var(--blanco);
+      display: flex;
+      flex-direction: column;
+  
+      span{
+        margin: 5px 0;
+      }
+    }
+  }
+
+  .img-box{
+    width: 100%;
+    height: 400px;
+    background-color: var(--naranja_claro);
+    border-radius: 10px;
+    overflow: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    img{
+      height: 350px;
+      width: auto;
+    }
+  }
+
+  .img-box::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 235px;
+    height: 200px;
+    
+    z-index: 100;
+    opacity: 1;
+    transition: all 0.3s;
+    border: 2px solid var(--naranja_oscuro);
+    border-right: none;
+    border-bottom: none;
+    border-top-left-radius: 10px;
+    transform: scale(1,1);
+  }
+
+  .img-box::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    width: 235px;
+    height: 200px;
+    
+    z-index: 100;
+    opacity: 1;
+    transition: all 0.3s;
+    border: 2px solid var(--naranja_oscuro);
+    border-top: none;
+    border-left: none;
+    border-bottom-right-radius: 10px;
+    transform: scale(1,1);
+  }
 }
 
 .line-footer{
@@ -338,8 +433,12 @@ footer{
     grid-area: main;
     width: 100%;
     height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   footer{
+    margin-top: 40px;
     grid-area: footer;
     width: 100%;
     height: max-content;
@@ -455,6 +554,102 @@ footer{
       -webkit-text-stroke-color: white;
     }
   
+  }
+
+  .introduccion{
+    margin: 20px 0;
+    width: 90%;
+    height: auto;
+    overflow: unset;
+    position: relative;
+  
+    display: grid;
+      grid-template-rows: 1fr 400px;
+      grid-template-columns: 1fr;
+      place-items: center;
+    
+  
+    div{
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      
+  
+      h3{
+       
+        font-size: 30px;
+        color: var(--naranja_oscuro);
+      }
+      
+      p{
+        width: 95%;
+        font-size: 15px;
+        color: var(--blanco);
+        display: flex;
+        flex-direction: column;
+        
+    
+        span{
+          margin: 5px 0;
+        }
+      }
+    }
+  
+    .img-box{
+      margin-top: 40px;
+      width: 100%;
+      height: 400px;
+      background-color: var(--naranja_claro);
+      border-radius: 10px;
+      overflow: unset;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      position: relative;
+  
+      img{
+        height: 350px;
+        width: auto;
+      }
+    }
+  
+    .img-box::after {
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      width: 235px;
+      height: 200px;
+      
+      z-index: 100;
+      opacity: 1;
+      transition: all 0.3s;
+      border: 2px solid var(--naranja_oscuro);
+      border-right: none;
+      border-bottom: none;
+      border-top-left-radius: 10px;
+      transform: scale(1,1);
+    }
+  
+    .img-box::before {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      right: -10px;
+      width: 235px;
+      height: 200px;
+      
+      z-index: 100;
+      opacity: 1;
+      transition: all 0.3s;
+      border: 2px solid var(--naranja_oscuro);
+      border-top: none;
+      border-left: none;
+      border-bottom-right-radius: 10px;
+      transform: scale(1,1);
+    }
   }
   
   .line-footer{
