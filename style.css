@@ -553,10 +553,11 @@ footer{
   
     h2{
       position: absolute;
-      bottom: 15px;
+      bottom: 35px;
       font-size: 30px;
       text-align: center;
       color: var(--transparente);
+      letter-spacing: 1px;
       -webkit-text-stroke-width: 1px;
       -webkit-text-stroke-color: white;
     }
