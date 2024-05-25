@@ -86,14 +86,17 @@ footer{
   left: 0;
   z-index: 1000000000;
   clip-path: circle(150% at 100% 0);
-  /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); */
   transition: clip-path 0.3s ease-in-out;
+
+  p{
+    margin-top: 10px;
+  }
+
 }
 
-.loader2{
+/* .loader2{
   clip-path: circle(0.0% at 100% 0);
-  /* clip-path: polygon(100% 0%, 100% 0, 100% 100%, 100% 100%); */
-}
+} */
 
 .loader-img{
   width: 350px;
@@ -450,7 +453,7 @@ footer{
   .loader{
     background-color: #1f1b23;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -462,12 +465,27 @@ footer{
     clip-path: circle(150% at 100% 0);
     /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); */
     transition: clip-path 0.3s ease-in-out;
+    
+    p{
+      margin-top: 40px;
+      font-size: 50px;
+      text-align: center;
+      color: var(--naranja_oscuro);
+      display: flex;
+      flex-direction: column;
+
+      .linea{
+        display: none;
+      }
+      .text{
+        font-size: 35px;
+      }
+    }
   }
   
-  .loader2{
+  /* .loader2{
     clip-path: circle(0.0% at 100% 0);
-    /* clip-path: polygon(100% 0%, 100% 0, 100% 100%, 100% 100%); */
-  }
+  } */
   
   .loader-img{
     width: 350px;
@@ -494,17 +512,6 @@ footer{
     background-position: 0 0, 100% 0, 100% 100%, 0 100%;
     background-image: linear-gradient(#1f1b23, #1f1b23), linear-gradient(#FF7400, #FF7400), linear-gradient(#1f1b23, #1f1b23), linear-gradient(#FF7400, #FF7400);
     animation: rotate 1.5s linear infinite;
-  }
-  .loader p{
-    word-wrap: break-word; 
-    white-space: normal; 
-    overflow: hidden; 
-    font-size: 50px; 
-    font-weight: bold;
-    font-family: 'Prompt', sans-serif;
-     background: linear-gradient(45deg, #FF7400, #FF7400);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
   
   @keyframes rotate {
