@@ -94,9 +94,9 @@ footer{
 
 }
 
-/* .loader2{
+.loader2{
   clip-path: circle(0.0% at 100% 0);
-} */
+}
 
 .loader-img{
   width: 350px;
@@ -483,9 +483,9 @@ footer{
     }
   }
   
-  /* .loader2{
+  .loader2{
     clip-path: circle(0.0% at 100% 0);
-  } */
+  }
   
   .loader-img{
     width: 350px;
