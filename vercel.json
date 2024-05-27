@@ -6,8 +6,8 @@
     ],
     "rewrites": [
         {
-          "source": "/404",
-          "destination": "/404.html"
+          "source": "/index",
+          "destination": "/index.html"
         }
       ]
   }
