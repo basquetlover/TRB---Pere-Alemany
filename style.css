@@ -779,7 +779,10 @@ footer{
     }
   }
   
-  
+  .menu-desktop{
+    display: none;
+} 
+
   .portada{
     width: 100%;
     height: 800px;

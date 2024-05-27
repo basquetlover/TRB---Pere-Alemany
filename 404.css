@@ -679,7 +679,9 @@ footer{
     }
   }
   
-  
+    .menu-desktop{
+        display: none;
+    }  
 
   .text-404{
     width: 80%;
