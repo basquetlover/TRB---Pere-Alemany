@@ -175,7 +175,7 @@ footer{
 
     .redirect{
       width: max-content;
-      
+      cursor: pointer;
       color: var(--blanco);
       font-size: 30px;
       text-align: center;
@@ -233,7 +233,7 @@ footer{
       color: var(--blanco);
       font-size: 40px;
       text-align: center;
-      
+      cursor: pointer;
       img{
         width: 80px;
         height: auto;
