@@ -3,6 +3,17 @@
   "routes": [
     { "handle": "filesystem" },
     { "src": "/(.*)", "status": 404, "dest": "/404.html" }
+  ],
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/recursos",
+      "destination": "/recursos.html"
+    },
+    {
+      "source": "/index",
+      "destination": "/index.html"
+    }
   ]
   
 }
