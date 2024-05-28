@@ -4,17 +4,6 @@
       { "handle": "filesystem" },
       { "src": "/(.*)", "status": 404, "dest": "404.html" }
     ],
-    "headers": [
-      {
-        "source": "/(.*).(png|jpg|jpeg|avif|svg)",
-        "headers": [
-          {
-            "key": "Cache-Control",
-            "value": "public, max-age=31536000, immutable"
-          }
-        ]
-      }
-    ],
     "rewrites": [
         {
           "source": "/index",
@@ -24,8 +13,5 @@
           "source": "/recursos",
           "destination": "/recursos.html"
         }
-      ],
-      "scripts": {
-        "build": "[my-framework] build --output public"
-      }
+      ]
   }
