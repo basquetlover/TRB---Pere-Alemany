@@ -4,9 +4,9 @@
     { "handle": "filesystem" },
     { "src": "/(.*)", "status": 404, "dest": "/404.html" }
   ],
-  "builds": [
-    {"src": "*.html", "use": "@vercel/static"}
-  ],
+  // "builds": [
+  //   {"src": "*.html", "use": "@vercel/static"}
+  // ],
   "cleanUrls": true
   
 }
