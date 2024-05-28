@@ -8,10 +8,10 @@
         {
           "source": "/index",
           "destination": "/index.html"
-        },
-        {
-          "source": "/recursos",
-          "destination": "/recursos.html"
         }
+        // {
+        //   "source": "/recursos",
+        //   "destination": "/recursos.html"
+        // }
       ]
   }
