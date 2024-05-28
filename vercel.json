@@ -24,5 +24,8 @@
           "source": "/recursos",
           "destination": "/recursos.html"
         }
-      ]
+      ],
+      "scripts": {
+        "build": "[my-framework] build --output public"
+      }
   }
