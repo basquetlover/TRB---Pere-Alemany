@@ -1,17 +1,7 @@
 {
-  "cleanUrls": true,
   "routes": [
     { "handle": "filesystem" },
     { "src": "/(.*)", "status": 404, "dest": "/404.html" }
-  ],
-  "rewrites": [
-    {
-      "source": "/index",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/recursos",
-      "destination": "/recursos.html"
-    }
   ]
+  
 }
