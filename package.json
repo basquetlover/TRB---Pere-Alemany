@@ -5,7 +5,7 @@
     "main": "index.html",
     "scripts": {
       "start": "vercel dev",
-      "build": "vercel build",
+      "build": "[my-framework] build --output public",
       "deploy": "vercel --prod"
     },
     "author": "Pere Alemany Tomàs",
