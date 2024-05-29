@@ -5,7 +5,7 @@
     { "handle": "filesystem" },
     { "src": "/(.*)", "status": 404, "dest": "/404.html" },
     { "src": "/", "dest": "/index" },
-    { "src": "/recursos", "dest": "/recursos" }
+    { "src": "/recursos.html", "dest": "/recursos" }
   ]
 
 }
