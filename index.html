@@ -9,7 +9,7 @@
 
   <link href="style.css" rel="stylesheet" type="text/css" />
 
-  
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
   <script src="loader.js"></script>
   <script src="konami-code.js"></script>
@@ -26,7 +26,39 @@
     <p><span>TRB</span> <span class="linea">|</span> <span class="text">Dron amb Cap mòbil LED</span></p>
     </div>
   </div>
+  <div class="menu" id="menu-content">
+    <div>
+      <h4>MENÚ</h4>
+      <a href="/" title="Pàgina d'inici">
+        <img src="img/logo-web.png" alt="logo web">
+      </a>
+      <div id="menu-boton-cerrar">
+        <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+      </div>
+    </div>
+    <nav>
+      <hr>
+      <a href="/" class="redirect" title="Pàgina d'inici">
+        INICI
+      </a>
+      <hr>
+      <a class="landing" title="Pàgina actual">
+        RECURSOS
+        
+      </a>
+      <hr>
+      <a class="inactive">
+        MODELS 3D
+        <p>Pròximament</p>
+      </a>
+      <hr>
+      <a class="inactive">
+        TREBALL
+        <p>Pròximament</p>
+      </a>
 
+    </nav>
+  </div>
   <div class="order-body">
     <header>
       <section class="menu-desktop">
@@ -57,7 +89,19 @@
 
         </nav>
       </section>
-      
+      <section class="menu-mobile">
+        <div class="pre-menu">
+          
+          <a href="/" title="Pròximament">
+            <img src="img/logo-web.png" alt="logo web">
+          </a>
+          <div id="menu-boton-abrir">
+            <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+
+          </div>
+        </div>
+        
+      </section>
     </header>
 
     <main>
@@ -146,3 +190,20 @@ També s'exploren diferents caps mòbils d'il·luminació escènica (Wash, Beam 
 </body>
 
 </html>
+
+<script>
+  $(document).ready(function(){
+        
+         var abrir = $("#menu-boton-abrir");
+         var cerrar = $("#menu-boton-cerrar");
+         var menu = $("#menu-content");
+ 
+ 
+         abrir.click(function(){
+             menu.addClass('active');
+         });
+         cerrar.click(function(){
+             menu.removeClass('active');
+         });
+       });
+ </script>

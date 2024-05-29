@@ -75,3 +75,20 @@
     </div>
 </body>
 </html>
+
+<script>
+  $(document).ready(function(){
+        
+         var abrir = $("#menu-boton-abrir");
+         var cerrar = $("#menu-boton-cerrar");
+         var menu = $("#menu-content");
+ 
+ 
+         abrir.click(function(){
+             menu.addClass('active');
+         });
+         cerrar.click(function(){
+             menu.removeClass('active');
+         });
+       });
+ </script>
