@@ -1,13 +1,11 @@
 {
   
   "version": 2,
-  "cleanUrls": true,
   "routes": [
     { "handle": "filesystem" },
     { "src": "/(.*)", "status": 404, "dest": "/404.html" }
   ],
   "source": "/feedback/:id",
   "destination": "/api/feedback/:id"
-  
-  
+
 }
