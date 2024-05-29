@@ -3,9 +3,10 @@
   "cleanUrls": true,
   "routes": [
     { "handle": "filesystem" },
-    { "src": "/(.*)", "status": 404, "dest": "/404.html" },
-    { "src": "/", "dest": "/index" }, 
-    { "src": "/about", "dest": "/about" }
-    
+    { "src": "/(.*)", "status": 404, "dest": "/404.html" }
+  ],
+  "rewrites": [
+    { "source": "/", "destination": "/index" },
+    { "source": "/recursos", "destination": "/recursos" }
   ]
 }
