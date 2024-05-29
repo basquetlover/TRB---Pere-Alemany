@@ -1,5 +1,17 @@
 {
+    "name": "TRB | Dron amb Cap mòbil LED",
+    "version": "1.0.0",
+    "description": "Un trabajo de bachiller",
+    "main": "index.html",
     "scripts": {
-      "build": "[my-framework] build --output public"
+      "start": "vercel dev",
+      "build": "vercel build",
+      "deploy": "vercel --prod"
+    },
+    "author": "Pere Alemany Tomàs",
+    "license": "MIT",
+    "devDependencies": {
+      "vercel": "^28.10.2"
     }
   }
+  
