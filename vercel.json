@@ -1,4 +1,5 @@
 {
+  "cleanUrls": true,
   "version": 2,
   "routes": [
     { "handle": "filesystem" },
