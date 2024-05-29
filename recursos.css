@@ -302,6 +302,7 @@ footer{
       transform: scale(1,1);
     }
     .btn-principal{
+      position: relative;
       width: max-content;
       display: flex;
       align-items: center;
@@ -315,6 +316,52 @@ footer{
         height: auto;
       }
     }
+    .btn-principal::after {
+      content: '';
+      position: absolute;
+      top: 2.5px;
+      left: 2.5px;
+      width: 70px;
+      height: 70px;
+      
+      z-index: 100;
+      opacity: 0;
+      transition: all 0.3s;
+      border: 2px solid var(--naranja_claro);
+      /* border-right: none;
+      border-left: none;
+      border-bottom: none; */
+      border-radius: 50%;
+      transform: scale(1,1) rotate(-45deg);
+    }
+  
+    /* .btn-principal::before {
+      content: '';
+      position: absolute;
+      bottom: 5px;
+      right: -5px;
+      width: 60px;
+      height: 40px;
+      
+      z-index: 100;
+      opacity: 0;
+      transition: all 0.3s;
+      border: 2px solid var(--naranja_claro);
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-radius: 50%;
+      transform: scale(1,1) rotate(-45deg);
+    } */
+    .btn-principal:hover::after {
+      opacity: 1;
+      transform: scale(1.2,1.2) rotate(-45deg);
+    }
+  
+    /* .btn-principal:hover::before {
+      opacity: 1;
+      transform: scale(1.2,1.2) rotate(-45deg);
+    } */
 
   }
 
@@ -342,14 +389,29 @@ footer{
       height: auto;
   
       a{
+        position: relative;
         margin-bottom: 30px;
         font-size: 50px;
         color: var(--naranja_oscuro);
+        span{
+          display: none;
+          position: absolute;
+          left: -35px;
+          svg{
+            width: 40px;
+            height: 40px;
+            transform: rotate(55deg);
+            fill: var(--naranja_oscuro);
+          }
+        }
       }
       a:hover{
         cursor: pointer;
         text-decoration: underline;
         text-decoration-color: var(--naranja_oscuro);
+        span{
+          display: block;
+        }
       }
       
       p{
