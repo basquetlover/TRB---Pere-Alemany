@@ -1,5 +1,5 @@
 {
-"name": "your-project-name",
+"name": "trb-dron-amb-cap-mobil-led",
   "version": "1.0.0",
   "description": "A simple HTML and CSS project",
   "main": "index.html",
@@ -7,9 +7,9 @@
     "start": "vercel dev"
   },
   "keywords": [
-    "html",
-    "css"
+    "dron",
+    "esdeveniment"
   ],
-  "author": "Your Name",
+  "author": "Pere Alemany Tomàs",
   "license": "MIT"
 }
