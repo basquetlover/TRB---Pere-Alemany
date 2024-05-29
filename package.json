@@ -1,0 +1,15 @@
+{
+"name": "your-project-name",
+  "version": "1.0.0",
+  "description": "A simple HTML and CSS project",
+  "main": "index.html",
+  "scripts": {
+    "start": "vercel dev"
+  },
+  "keywords": [
+    "html",
+    "css"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
