@@ -1049,7 +1049,7 @@ footer{
 .menu.active{
   background-color: var(--negro);
   width: 100%;
-  height: 100%;
+  height: 110vh;
   position: fixed;
   z-index: 100000;
   display: grid;
