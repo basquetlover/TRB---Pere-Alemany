@@ -377,15 +377,28 @@ footer{
   background-size: cover; 
   background-repeat: no-repeat; 
   
-
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
   model-viewer{
-    width: 75%;
+    width: 95%;
     height: 100%;
+  }
+  .icono{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+
+    svg{
+        width: 40px;
+        height: 40px;
+        fill: var(--blanco);
+    }
   }
 }
 
