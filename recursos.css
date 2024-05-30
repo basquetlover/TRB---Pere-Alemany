@@ -175,7 +175,7 @@ footer{
     .inactive{
         
             width: max-content;
-            cursor: pointer;
+            cursor: default;
             color: var(--blanco);
             font-size: 30px;
             text-align: center;
