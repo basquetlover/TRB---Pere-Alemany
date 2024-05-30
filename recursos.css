@@ -66,6 +66,9 @@ body{
 }
 
 header{
+  box-shadow: 0px 5px 5px var(--negro);
+  background-color: var(--negro);
+  padding: 10px 0;
   grid-area: header;
   width: 100%;
   display: flex;
@@ -158,15 +161,18 @@ footer{
 }
 
 .menu-desktop{
+  background-color: var(--negro);
+  
   width: 100%;
   height: auto;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 
   nav{
     width: 95%;
     height: auto;
-
+    margin-bottom: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
     grid-template-rows: 1fr;
@@ -345,7 +351,14 @@ footer{
 
   }
 
-
+  hr{
+    margin-top: 10px;
+    border: none;
+    height: 2px;
+    background-color: var(--naranja_oscuro);
+    width: 98%; 
+    margin: 0; 
+  }
 
 }
 
@@ -361,7 +374,7 @@ footer{
 }
 
 .blender{
-    margin: 20px 0;
+    margin: 40px 0;
     width: 90%;
     height: auto;
     overflow: unset;
@@ -922,7 +935,7 @@ footer{
     }
   }
   
-  .menu-desktop{
+.menu-desktop{
     display: none;
 } 
 
@@ -1146,7 +1159,10 @@ footer{
       flex-direction: column;
       align-items: center;
 
-      
+      p{
+        font-size: 10px;
+        color: var(--naranja_oscuro);
+      }
 
     }
     .redirect::after {

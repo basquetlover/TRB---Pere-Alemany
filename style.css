@@ -66,6 +66,7 @@ body{
 }
 
 header{
+  padding: 10px 0;
   grid-area: header;
   width: 100%;
   display: flex;
@@ -1178,7 +1179,10 @@ footer{
       flex-direction: column;
       align-items: center;
 
-      
+      p{
+        font-size: 10px;
+        color: var(--naranja_oscuro);
+      }
 
     }
     .redirect::after {
