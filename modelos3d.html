@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="cat">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>TRB | Dron amb Cap mòbil LED</title>
+  <link rel="icon" href="img/logo-web.png" sizes="750x750" />
+
+  <link href="modelos3d.css" rel="stylesheet" type="text/css" />
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+  <script src="loader.js"></script>
+  <script src="konami-code.js"></script>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+  <div class="loader" id="loader">
+    <div class="loader-img">
+    <img src="img/foto-perfil.avif" alt="foto perfil">
+    </div>
+    <div class="loader-order">
+    <p><span>TRB</span> <span class="linea">|</span> <span class="text">Dron amb Cap mòbil LED</span></p>
+    </div>
+  </div>
+  <div class="menu" id="menu-content">
+    <div>
+      <h4>MENÚ</h4>
+      <a href="/" title="Pàgina d'inici">
+        <img src="img/logo-web.png" alt="logo web">
+      </a>
+      <div id="menu-boton-cerrar">
+        <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+      </div>
+    </div>
+    <nav>
+      <hr>
+      <a href="/" class="redirect" title="Pàgina d'inici">
+        INICI
+      </a>
+      <hr>
+      <a href="recursos.html" class="redirect" title="Pàgina dels recursos utilitzats">
+        RECURSOS
+        <p>En curs</p>
+      </a>
+      <hr>
+      <a class="landing" title="Pàgina actual">
+        MODELS 3D
+        
+      </a>
+      <hr>
+      <a class="inactive">
+        TREBALL
+        <p>Pròximament</p>
+      </a>
+
+    </nav>
+    
+  </div>
+  <div class="order-body">
+    <header>
+      <section class="menu-desktop">
+        <nav>
+          <a href="/" class="redirect" title="Pàgina d'inici">
+            INICI
+          </a>
+
+          <a href="/recursos.html" class="redirect" title="Pàgina dels recursos utilitzats">
+            RECURSOS
+            <p>En curs</p>
+          </a>
+
+          <a href="/" class="btn-principal" title="Pàgina d'inici">
+            <img src="img/logo-web.png" alt="logo web">
+          </a>
+
+          <a class="landing" title="Pàgina actual">
+            MODELS 3D
+            
+          </a>
+
+          <a class="inactive">
+            TREBALL
+            <p>Pròximament</p>
+          </a>
+
+
+        </nav>
+        
+      </section>
+      <section class="menu-mobile">
+        <div class="pre-menu">
+          
+          <a href="/" title="Pròximament">
+            <img src="img/logo-web.png" alt="logo web">
+          </a>
+          <div id="menu-boton-abrir">
+            <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+
+          </div>
+        </div>
+        
+      </section>
+    </header>
+
+    <main>
+      <section class="modelo3d">
+        <model-viewer
+      alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum"
+      src="models/drone-TRB-web.glb" shadow-intensity="1" camera-controls touch-action="pan-z"></model-viewer>
+      </section>
+
+   
+    </main>
+
+    <footer>
+      <div class="line-footer"></div>
+      <section class="content">
+        <a href="https://sites.google.com/iescalvia.com/iescalvia/inici" target="_blank" class="logo-ies logo-ies-anim">
+          <img src="svg/ies-calvia-blanco.svg" alt="logo ies calvia">
+        </a>
+        
+        <div class="text-footer">
+          <hr>
+          <h4><span>Autor</span> Pere Alemany Tomàs</h4>
+          <hr>
+          <h4><span>Tutora</span> Maria Isabel Cabanillas Bravo</h4>
+          <hr>
+          <p xmlns:cc="http://creativecommons.org/ns#" >
+            <span>
+              <img  src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="">
+            2024 TRB - Pere Alemany 
+            </span>
+          <span class="copi-div">|</span>
+            <span>
+            <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref= selecter-v1" target="_blank" rel="licencia noopener noreferrer">Todos los derechos reservados.
+              
+              <img  src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="">
+              <img  src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt="">
+              <img  src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1" alt="">
+            </a>
+          </span>
+          </p>
+          <hr>
+        </div>
+        <a href="https://vercel.com" target="_blank" class="host host-anim">
+          <h5>Hosted by</h5>
+            <img src="svg/vercel-logo-blanco.svg" alt="logo vercel">
+        </a>
+        
+      </section>
+    </footer>
+  </div>
+</body>
+
+</html>
+
+<script>
+  $(document).ready(function(){
+        
+         var abrir = $("#menu-boton-abrir");
+         var cerrar = $("#menu-boton-cerrar");
+         var menu = $("#menu-content");
+ 
+ 
+         abrir.click(function(){
+             menu.addClass('active');
+         });
+         cerrar.click(function(){
+             menu.removeClass('active');
+         });
+       });
+ </script>
