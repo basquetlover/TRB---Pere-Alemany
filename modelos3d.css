@@ -409,6 +409,7 @@ footer{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
+  place-items: center;
 
   margin: 20px 0;
 
