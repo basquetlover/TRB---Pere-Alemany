@@ -559,6 +559,9 @@ footer{
         }
       }
     }
+    hr{
+      display: none;
+    }
 
   }
 
@@ -1247,27 +1250,211 @@ footer{
 
 }
 
-  .portada{
-    width: 100%;
-    height: 800px;
-    position: relative;
-    margin: 0;
-    padding: 0;
+.modelo3d{
+  width: 100%;
+  height: 600px;
+
+  margin-bottom: 20px;
+  padding: 0;
+
+  background-image: url('img/fondo-TRB-3d-monile.avif');
+  background-size: cover; 
+  background-repeat: no-repeat; 
   
-    background-image: url('img/fondo-modeloTRB-mobile.avif');
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    
-  
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  model-viewer{
+    width: 85%;
+    height: 100%;
+  }
+  .icono{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+
+    svg{
+        width: 40px;
+        height: 40px;
+        fill: var(--blanco);
+    }
+  }
+}
+
+.partes{
+  width: 95%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  place-items: center;
+
+  margin: 20px 0;
+
+  text-transform: uppercase;
+
+  .box{
+    margin: 10px 0;
+    width: 90%;
+    height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 
-  
+    h4{
+      font-size: 35px;
+      text-align: center;
+      color: var(--naranja_oscuro);
+    }
+
+    .modelo{
+      position: relative;
+      width: 300px;
+      height: 300px;
+      border-radius: 0%;
+
+      background-image: url('img/fondo-TRB-3d-partes.avif');
+      background-size: cover; 
+      background-repeat: no-repeat; 
+
+      model-viewer{
+        width: 300px;
+      height: 300px;
+      border-radius: 100%;
+      }
+      .icono{
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 40px;
+        height: 40px;
+    
+        svg{
+            width: 40px;
+            height: 40px;
+            fill: var(--blanco);
+        }
+      }
+    }
+
+    .descargas{
+      width: 95%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+      h5{
+        font-size: 30px;
+        text-align: center;
+        color: var(--naranja_oscuro);
+      }
+
+      .btn{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        a{
+          position: relative;
+          cursor: pointer;
+          margin-top: 10px;
+          border-radius: 10px;
+          width: 80px;
+          height: 80px;
+          background-color: var(--naranja_claro);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          svg{
+              width: 60px;
+              height: 60px;
+              fill: var(--gris_oscuro);
+              transition: .3s;
+          }
+      }
+      a:hover{
+          svg{
+              fill: var(--naranja_oscuro);
+              transition: .3s;
+          }
+      }
+      a::after {
+          content: '';
+          position: absolute;
+          top: -5px;
+          left: -5px;
+          width: 50px;
+          height: 50px;
+          
+          z-index: 100;
+          opacity: 0;
+          transition: all 0.3s;
+          border: 2px solid var(--naranja_oscuro);
+          border-right: none;
+          border-bottom: none;
+          border-top-left-radius: 10px;
+          transform: scale(1,1);
+          transition: .3s;
+        }
+      
+        a::before {
+          content: '';
+          position: absolute;
+          bottom: -5px;
+          right: -5px;
+          width: 50px;
+          height: 50px;
+          
+          z-index: 100;
+          opacity: 0;
+          transition: all 0.3s;
+          border: 2px solid var(--naranja_oscuro);
+          border-top: none;
+          border-left: none;
+          border-bottom-right-radius: 10px;
+          transform: scale(1,1);
+          transition: .3s;
+        }
+      
+        a:hover{
+          cursor: pointer;
+        }
+      
+        a:hover::after{
+          opacity: 1;
+          transform: scale(1.1,1.1);
+          transition: .3s;
+        }
+        a:hover::before{
+          opacity: 1;
+          transform: scale(1.1,1.1);
+          transition: .3s;
+        }
+      }
+    }
+
+    hr{
+      border: none;
+      height: 2px;
+      background-color: var(--naranja_claro);
+      width: 100%; 
+      margin: 40px 0; 
+    }
+
   }
 
-  
+}
   
   .line-footer{
     margin-top: 10px;
