@@ -376,7 +376,7 @@ footer{
   display: none;
 }
 
-.blender{
+.box{
     margin: 40px 0;
     width: 90%;
     height: auto;
@@ -453,6 +453,24 @@ footer{
         img{
           height: 147px;
           width: auto;
+        }
+      }
+      .dji{
+        width: 200px;
+        height: 200px;
+        background-color: var(--naranja_claro);
+        border-radius: 10px;
+        overflow: unset;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        position: relative;
+    
+        img{
+          height: auto;
+          width: 150px;
+          opacity: 1;
         }
       }
     
