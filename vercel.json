@@ -1,12 +1,9 @@
 {
-  "version": 2,
-  
+  "version": 3,
+  "cleanUrls": true,
   "routes": [
     { "handle": "filesystem" },
-    { "src": "/(.*)", "status": 404, "dest": "/404.html" },
     { "src": "/", "dest": "/index" },
-    { "src": "/recursos.html", "dest": "/recursos" }
+    { "src": "/(.*)", "status": 404, "dest": "/404.html" }
   ]
-
-
 }
