@@ -1,11 +1,11 @@
 {
-  "version": 3,
+  "version": 2,
   
   
   "routes": [
     { "handle": "filesystem" },
     { "src": "/(.*)", "status": 404, "dest": "/404.html" },
-    { "src": "/", "dest": "/index" },
+    { "src": "/", "dest": "/index.html" },
     { "src": "/recursos.html", "dest": "/recursos" }
   ]
 
