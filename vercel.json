@@ -3,7 +3,7 @@
   "cleanUrls": true,
   "routes": [
     { "handle": "filesystem" },
-    { "src": "/", "dest": "/index" },
+    { "src": "/", "dest": "/index.html" },
     { "src": "/(.*)", "status": 404, "dest": "/404.html" }
   ]
 }
