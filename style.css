@@ -35,7 +35,9 @@
 }
 /*Estilos index.html desktop*/
 @media screen and (min-width: 981px) {
-
+  .desktop-off{
+    display: none;
+  }
 .order-body{
     margin: 0;
     padding: 0;
@@ -1059,6 +1061,10 @@ a::after {
 }
 /*Estilos index.html mobile*/
 @media screen and (max-width: 980px) {
+
+  .mobile-off{
+    display: none;
+  }
 
   .order-body{
       margin: 0;

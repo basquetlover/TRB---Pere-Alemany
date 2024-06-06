@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../Downloads/Libre_Franklin"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "TRB---Pere-Alemany"
+	}
+}
