@@ -11,5 +11,8 @@
     "esdeveniment"
   ],
   "author": "Pere Alemany Tomàs",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@vercel/routing-utils": "^1.0.0"
+  }
 }

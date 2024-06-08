@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="cat">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>TRB | Dron amb Cap mòbil LED</title>
+  <link rel="icon" href="img/logo-web.png" sizes="750x750" />
+
+  <link href="treball.css" rel="stylesheet" type="text/css" />
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+  <script src="loader.js"></script>
+  <script src="konami-code.js"></script>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+  <div class="noti off mobile-off" id="noti-enlaze">
+    <div class="box-content">
+    <div class="icon">
+      <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960"><path d="M760-200H320q-33 0-56.5-23.5T240-280v-560q0-33 23.5-56.5T320-920h280l240 240v400q0 33-23.5 56.5T760-200ZM560-640v-200H320v560h440v-360H560ZM160-40q-33 0-56.5-23.5T80-120v-560h80v560h440v80H160Zm160-800v200-200 560-560Z"/></svg>
+    </div>
+    <div class="text">
+      <p>Enllaç copiat correctament</p>
+    </div>
+  </div>
+  <div class="noti-line">
+
+  </div>
+  </div>
+
+  <div class="loader" id="loader">
+    <div class="loader-img">
+    <img src="img/foto-perfil.avif" alt="foto perfil">
+    </div>
+    <div class="loader-order">
+    <p><span>TRB</span> <span class="linea">|</span> <span class="text">Dron amb Cap mòbil LED</span></p>
+    </div>
+  </div>
+  <div class="menu" id="menu-content">
+    <div>
+      <h4>MENÚ</h4>
+      <a href="/" title="Pàgina d'inici">
+        <img src="img/logo-web.png" alt="logo web">
+      </a>
+      <div id="menu-boton-cerrar">
+        <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+      </div>
+    </div>
+    <nav>
+      <hr>
+      <a href="/" class="landing" title="Pàgina d'inici">
+        INICI
+      </a>
+      <hr>
+      <a href="recursos.html" class="redirect" title="Pàgina dels recursos utilitzats">
+        RECURSOS
+        
+      </a>
+      <hr>
+      <a href="modelos3d.html" class="redirect" title="Pàgina models 3D">
+        MODELS 3D
+        <p>En curs</p>
+      </a>
+      <hr>
+      <a class="landing" title="Pàgina actual">
+        TREBALL
+        
+      </a>
+
+    </nav>
+    
+  </div>
+  <div class="order-body">
+    <header>
+      <section class="menu-desktop">
+        <nav>
+          <a href="/" class="redirect" title="Pàgina d'inici">
+            INICI
+          </a>
+
+          <a href="/recursos.html" class="redirect">
+            RECURSOS
+            
+          </a>
+
+          <a class="btn-principal" title="Pàgina d'inici">
+            <img src="img/logo-web.png" alt="logo web">
+          </a>
+
+          <a href="modelos3d.html" class="redirect" title="Pàgina models 3D">
+            MODELS 3D
+            <p>En curs</p>
+          </a>
+
+          <a class="landing" title="Pàgina actual">
+            TREBALL
+            
+          </a>
+
+
+        </nav>
+        
+      </section>
+      <section class="menu-mobile">
+        <div class="pre-menu">
+          
+          <a href="/" title="Pròximament">
+            <img src="img/logo-web.png" alt="logo web">
+          </a>
+          <div id="menu-boton-abrir">
+            <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+
+          </div>
+        </div>
+        
+      </section>
+    </header>
+
+    <main>
+      <section class="portada mobile-off">
+        <video  preload="auto"  autoplay loop muted class="video">
+            <source src="img/Video-dron-TRB.mp4" type="video/mp4">
+        </video>
+      </section>
+
+      <section class="resum">
+        <h3>Resum</h3>
+        <p>
+            <span> 
+                L'objectiu principal és substituir els sistemes d'il·luminació tradicionals, que depenen d'estructures fixes anomenades "truss", per un dron equipat amb il·luminació mòbil per a eliminar les limitacions de mobilitat. El treball proposa desenvolupar un pla i un model virtual d'un dron amb il·luminació mòbil, investigant el seu funcionament i les necessitats específiques de la il·luminació audiovisual.
+            </span>
+            <span>
+                El procés metodològic seguit inclou la identificació del problema, l'anàlisi i disseny detallat, i la creació d'una solució que satisfaci les necessitats detectades. Per a això, es va triar el DJI FlyCart 30, un dron originalment dissenyat per al transport de mercaderies que es modificarà per a transportar una bateria i un cap mòbil d'il·luminació. Les especificacions del dron inclouen un pes de 65 kg, capacitat de càrrega màxima de 30 kg i detalls tècnics sobre el seu sistema de propulsió i bateries.
+            </span>
+            <span>
+                El treball també explora diferents tipus de caps mòbils utilitzats en il·luminació escènica, com els caps Wash, Beam i Espot, cadascun amb característiques específiques per a crear diferents efectes d'il·luminació. La bateria utilitzada serà una estació elèctrica portàtil equipada amb bateries LiFePO4, que inclou protecció contra sobreescalfament, sobrecàrrega i curtcircuits.
+            </span>
+        </p>
+       
+      </section>
+      <section class="pdf">
+        <a href="/img/TRB_Dron amb_Cap-mòbil_LED.pdf" target="_blank" title="Veure treball online"> 
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 500 500"><path d="M322.3 50.8c-.9.6.3 2.4 4 6l5.3 5.3 15.5-.3 15.4-.3v-11l-19.5-.2c-10.7-.2-20.1.1-20.7.5zM372 56v6h14.5l-13.8 13.8L359 89.6l4 3.9 4 3.9 14-13.9 14-14V84h10V50h-33v6zM93.6 53.2c-1.4 2-1.6 22.4-1.6 197C92 444.1 92 445 94 447s2.9 2 141.8 1.8l139.7-.3 6.7-3.2c11.7-5.5 20.1-15.2 23.9-27.5 1.8-6.1 1.9-11.2 1.9-137.5V149.1l-51.1-49L305.8 51H95.1l-1.5 2.2zM295 97l.5 32.5 3.1 6.5c3.7 7.8 7.1 12 13 16.1 9.1 6.2 9.7 6.3 47.4 6.9l34.5.5v126c0 121.5-.1 126.2-1.9 130.9-2.6 6.7-8.9 13.4-15.4 16.3l-5.3 2.3H106V250.2c0-101.7.3-185.2.7-185.5.3-.4 42.8-.6 94.2-.5l93.6.3.5 32.5zm52.6 14 34.8 33.5-26.5.3c-22.6.2-27 0-30.8-1.4-6-2.3-11-7-13.7-12.9-2.3-4.8-2.4-5.9-2.4-30.3 0-24.6.1-25.3 1.9-24 1 .7 17.5 16.4 36.7 34.8z"/><path d="M238.5 102.9c-8.1 3.6-11.3 10.2-10.2 20.4.6 5.6 7.7 27.3 12.1 37.2l2.7 6-1.7 7c-2.6 10.8-10.1 31.9-15.3 43l-4.8 10.1-5.3 1.2c-11.7 2.7-32 12-40.2 18.4-5.4 4.2-9.2 12.5-8.6 18.9 1.2 12.4 11.7 16.9 25.7 10.8 11-4.7 24.8-17.2 33.3-30.1 2.8-4.3 5.8-8 6.7-8.2 6.7-1.9 23.1-5.2 37.2-7.6l16.9-2.8 6.7 3.4c3.9 1.9 9.8 3.8 13.8 4.4 13.2 2.1 21.7-.9 24.4-8.6 1.3-3.7 1.2-4.4-.5-7.9-3.4-6.9-6.5-7.8-24.6-7.1l-15.7.5-4.7-4.7c-10.5-10.5-21.5-26.4-26.5-38-1.7-3.9-1.7-4.8-.4-11 2.6-12.7 4.7-30.7 4.1-35.9-1.2-10.1-5.4-16.7-12.8-19.8-4.8-1.9-7.4-1.9-12.3.4zm10.4 17.6c1 2.9 1.2 6.1.7 11.8-.4 4.2-1.1 7.7-1.5 7.7-.7 0-4.5-11.1-5.6-16.7-.8-3.8 1-7.5 3.3-7.1.9.2 2.3 2.1 3.1 4.3zm8 72.5c1.9 3.3 6.3 9.5 9.7 13.8 3.4 4.2 6 8 5.7 8.4-.2.5-1.4.8-2.6.8-1.2 0-8.4 1.3-15.9 2.9-7.6 1.5-13.8 2.5-13.8 2.2 0-.3 1.7-4.9 3.8-10.1 2.1-5.2 4.9-12.8 6.1-16.8 1.3-3.9 2.6-7.2 3-7.2.3 0 2.1 2.8 4 6zm-54.2 59.5c-7.1 6.5-14.4 11.1-18.7 11.7-3.2.4-3.7-2-1.1-5.4 3-3.8 24.5-14.6 26.1-13.1.3.3-2.6 3.3-6.3 6.8zM180.7 336c-5.8 1.8-5.7 1.2-5.7 28 0 20.6.2 25 1.5 26 1.7 1.4 7.9 2.2 11.8 1.4 2.7-.6 2.7-.6 2.7-8.9v-8.2l8-.5c6.9-.4 8.7-.9 12.2-3.4 5.6-4 7.8-8.5 7.8-15.9 0-8.9-4.9-15.3-13.9-18.4-3.9-1.3-20.2-1.3-24.4-.1zm18 12.1c3.4 1.3 4.3 2.5 4.3 6.6 0 5-4.9 8.4-9.9 6.8-1.9-.6-2.1-1.4-2.1-7.6 0-6.6.1-6.9 2.4-6.9 1.4 0 3.7.5 5.3 1.1zM233.4 336.1c-1.7.5-3.7 1.5-4.3 2.3-.8.9-1.1 8.5-.9 25.7l.3 24.3 3.5 2c4.8 2.9 21.9 3 29.8.3 6.9-2.5 13.5-9 15.7-15.8 2.2-6.6 1.7-19.7-1-25.3-4.9-10.2-14-14.6-29.8-14.5-5.6 0-11.6.5-13.3 1zm22.7 13.5c6.1 3.1 8.6 14.1 5.2 22.5-1.9 4.7-7.2 7.8-13.5 7.9H244v-32h4.5c2.6 0 6 .7 7.6 1.6zM294 336.7c-5 1.8-5 2.1-5 27.9 0 24 0 24.3 2.2 25.8 2.9 2 11.7 2.2 12.4.2.3-.8.6-5.2.7-9.7l.2-8.4 9-.3c10-.3 12.5-1.6 12.5-6.4 0-6.2-1.1-6.8-12-6.8h-10v-10h10.8c9.3 0 11.1-.3 12.5-1.8 1.9-2.1 2.2-6.4.7-9.3-1-1.8-2.2-1.9-16.8-1.8-8.6 0-16.4.3-17.2.6zM395 109.8v15.8l5 4.9 5 4.9V94h-10v15.8z"/></svg>
+        </a>
+        <a  title="Pròximament"> 
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 1200 1200"><path d="M326.3 118.1c-15.7 2.6-29.7 12.9-37 27.3-5.6 10.9-5.3-7.5-5.3 327.2 0 217.7.3 310.8 1.1 315 2.7 15 13.2 28.5 27.7 35.7l8.5 4.2 86.4.3 86.3.3v-37l-73.8-.3-73.7-.3-6.8-3.3c-4.9-2.4-7.9-4.8-10.7-8.4-7.6-9.6-7 17.8-6.8-307.8l.3-292.5 2.1-4.6c3.1-6.7 8.7-12.4 15.2-15.6l5.7-2.8h509l4.5 2.1c6.8 3.3 12.6 8.8 15.7 15.2l2.8 5.7.3 292.5c.2 325.6.8 298.2-6.8 307.8-2.8 3.6-5.8 6-10.7 8.4l-6.8 3.3-73.7.3-73.8.3v37l86.3-.3 86.4-.3 8.5-4.2c14.5-7.2 25-20.7 27.7-35.7.8-4.2 1.1-97.3 1.1-315 0-339.2.4-316.5-6.1-328.5-5.8-11-16.8-20.2-28.9-24.4l-6.5-2.2-271.5-.1c-149.4-.1-273.8.2-276.7.7z"/><path d="M379.3 359.1c-4.3 1.2-9.1 6.3-9.8 10.2-.3 1.8-.4 49.5-.3 106.2.3 101.2.3 103 2.3 105.7 4.7 6.3-14.6 5.8 228.5 5.8s223.8.5 228.5-5.8c2-2.7 2-4.5 2.3-107 .3-116.3.7-108.9-6.7-113.4l-3.6-2.3-219-.2c-131.9-.1-220.3.2-222.2.8zm101.2 33.2c21 6 35.3 19.5 40.1 37.8 2.4 8.9 2.2 23.5-.4 31.6-4 12.7-13 22.7-25.6 28.7-11.2 5.3-19.3 6.7-43.3 7.3l-21.3.6V556h-34V389.9l39.3.3c33 .4 40.1.7 45.2 2.1zm136.5.1c3.6 1 10.3 3.6 15 5.8 7.1 3.4 10 5.6 17.5 13.2 17.4 17.5 23.4 35.4 22.2 67-.6 17.8-2.1 24.4-8.4 37.6-3.9 8-5.9 10.8-13.2 18.2-7.2 7.2-10.3 9.4-18 13.2-15.3 7.5-19.8 8.1-55.6 8.1h-31l-.3-81.5c-.1-44.8 0-82.1.3-82.8.8-2.2 62.8-1.1 71.5 1.2zM804 404v14h-73v42h65v28h-65l-.2 33.7-.3 33.8h-34l-.3-81.5c-.1-44.8 0-82.1.3-82.8.3-.9 12.1-1.2 54-1.2H804v14z"/><path d="M430 443.5V469h19.3c22.1 0 26.2-.9 32.1-6.7 4.4-4.5 6-9 6.1-17.3 0-8.6-2.5-14.8-8-19.9-6.5-6-11.5-7.1-32.2-7.1H430v25.5zM580 473v55h10.8c17.4 0 26.7-3.3 34.6-12.1 8.3-9.1 11.6-21.2 11.6-42.7 0-16.6-1.7-26.8-6.1-35.3-7.2-14.3-18.5-19.9-40.4-19.9H580v55zM506.8 767.7l-.3 94.8-27.7.3-27.6.2 74 109.3c40.7 60 74.3 109.2 74.8 109.2s34.1-49.2 74.8-109.2l74-109.3-27.6-.2-27.7-.3-.3-94.8-.2-94.7H507l-.2 94.7z"/></svg>
+        </a>
+      </section>
+
+      
+    </main>
+
+    <footer>
+      <div class="line-footer"></div>
+      <section class="content">
+        <a href="https://sites.google.com/iescalvia.com/iescalvia/inici" rel="noopener noreferrer" target="_blank" class="logo-ies logo-ies-anim">
+          <img src="svg/ies-calvia-blanco.svg" alt="logo ies calvia">
+        </a>
+        
+        <div class="text-footer">
+          <hr>
+          <h4><span>Autor</span> Pere Alemany Tomàs</h4>
+          <hr>
+          <h4><span>Tutora</span> Maria Isabel Cabanillas Bravo</h4>
+          <hr>
+          <p xmlns:cc="http://creativecommons.org/ns#" >
+            <span>
+              <img  src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="">
+            2024 TRB - Pere Alemany 
+            </span>
+          <span class="copi-div">|</span>
+            <span>
+            <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref= selecter-v1" rel="noopener noreferrer" target="_blank" rel="licencia noopener noreferrer">Todos los derechos reservados.
+              
+              <img  src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="">
+              <img  src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt="">
+              <img  src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1" alt="">
+            </a>
+          </span>
+          </p>
+          <hr>
+        </div>
+        <a href="https://vercel.com" target="_blank" rel="noopener noreferrer" class="host host-anim">
+          <h5>Hosted by</h5>
+            <img src="svg/vercel-logo-blanco.svg" alt="logo vercel">
+        </a>
+        
+      </section>
+      <section class="links">
+        <div id="compartir" title="Compartir web">
+          <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="M720-80q-50 0-85-35t-35-85q0-7 1-14.5t3-13.5L322-392q-17 15-38 23.5t-44 8.5q-50 0-85-35t-35-85q0-50 35-85t85-35q23 0 44 8.5t38 23.5l282-164q-2-6-3-13.5t-1-14.5q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35q-23 0-44-8.5T638-672L356-508q2 6 3 13.5t1 14.5q0 7-1 14.5t-3 13.5l282 164q17-15 38-23.5t44-8.5q50 0 85 35t35 85q0 50-35 85t-85 35Zm0-640q17 0 28.5-11.5T760-760q0-17-11.5-28.5T720-800q-17 0-28.5 11.5T680-760q0 17 11.5 28.5T720-720ZM240-440q17 0 28.5-11.5T280-480q0-17-11.5-28.5T240-520q-17 0-28.5 11.5T200-480q0 17 11.5 28.5T240-440Zm480 280q17 0 28.5-11.5T760-200q0-17-11.5-28.5T720-240q-17 0-28.5 11.5T680-200q0 17 11.5 28.5T720-160Zm0-600ZM240-480Zm480 280Z"/></svg>
+        </div>
+        <!-- <div title="Reportar errors" id="email">
+          <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="M480-200q66 0 113-47t47-113v-160q0-66-47-113t-113-47q-66 0-113 47t-47 113v160q0 66 47 113t113 47Zm-80-120h160v-80H400v80Zm0-160h160v-80H400v80Zm80 40Zm0 320q-65 0-120.5-32T272-240H160v-80h84q-3-20-3.5-40t-.5-40h-80v-80h80q0-20 .5-40t3.5-40h-84v-80h112q14-23 31.5-43t40.5-35l-64-66 56-56 86 86q28-9 57-9t57 9l88-86 56 56-66 66q23 15 41.5 34.5T688-640h112v80h-84q3 20 3.5 40t.5 40h80v80h-80q0 20-.5 40t-3.5 40h84v80H688q-32 56-87.5 88T480-120Z"/></svg>
+        </div> -->
+        <a href="mailto:p_alemanyt@a.iescalvia.com" title="Reportar errors">
+          <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="M480-200q66 0 113-47t47-113v-160q0-66-47-113t-113-47q-66 0-113 47t-47 113v160q0 66 47 113t113 47Zm-80-120h160v-80H400v80Zm0-160h160v-80H400v80Zm80 40Zm0 320q-65 0-120.5-32T272-240H160v-80h84q-3-20-3.5-40t-.5-40h-80v-80h80q0-20 .5-40t3.5-40h-84v-80h112q14-23 31.5-43t40.5-35l-64-66 56-56 86 86q28-9 57-9t57 9l88-86 56 56-66 66q23 15 41.5 34.5T688-640h112v80h-84q3 20 3.5 40t.5 40h80v80h-80q0 20-.5 40t-3.5 40h84v80H688q-32 56-87.5 88T480-120Z"/></svg>
+        </a>
+        <a href="https://github.com/basquetlover/TRB---Pere-Alemany" rel="noopener noreferrer" target="_blank" title="Ver repositorio de github">
+          <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225 225"><path d="M91 9.5c-69.7 15.7-105.9 89.9-74.5 153 11.3 22.8 30.4 41.1 53.5 51.2 13.4 5.8 15 4.7 15-10.3V193h-8.6c-15.6 0-21.5-3-27.4-14.2-1.8-3.5-6.3-9.4-9.9-13.1-7.1-7.3-7.1-8.7-.3-8.7 5 0 8.2 2.2 16.1 10.8 3.9 4.4 8.6 8.7 10.5 9.6 3.7 1.8 13.1 2.1 16.9.7 2.8-1.1 10.2-15 8.3-15.6-.6-.2-4.5-1.1-8.6-2-22-5-34.6-18.6-37.1-40-1.7-15 0-26 5.3-34 3.2-4.9 3.3-5.1 3.3-17 .1-15.3 1-17.5 7.2-17.5 4.7 0 11.6 2.6 19.7 7.3 4.9 2.8 5.1 2.8 11.5 1.6 8.4-1.6 34.9-1.6 42.1.1 5.5 1.2 5.5 1.2 13-2.9 7.9-4.2 18.3-7.5 21.1-6.6 3.3 1.1 5.5 13.4 4 22.5-.9 5.1-.8 5.8 2 10.4 6.7 10.9 8.9 23.9 6.5 37.4-2.8 15.6-10.3 26.9-22.2 33.4-5.1 2.8-18.2 6.8-22.1 6.8-2.9 0-2.9.5.3 6 2.4 4.3 2.6 5.3 3.1 25.8.6 19.8.8 21.4 2.6 22.3 2.6 1.5 6.3.6 14.9-3.5 29.8-14.2 51-39.5 59.5-71.3 2.3-8.7 2.6-11.7 2.6-26.3 0-14.6-.3-17.6-2.6-26.3-5.3-19.7-17-39.5-31.2-52.5-12.9-11.8-29.7-21.2-45.2-25.3-10.4-2.8-39.5-3.6-49.3-1.4z"/></svg>
+        
+        </a>
+        
+      </section>
+    </footer>
+  </div>
+</body>
+
+</html>
+
+<script>
+  $(document).ready(function(){
+        
+         var abrir = $("#menu-boton-abrir");
+         var cerrar = $("#menu-boton-cerrar");
+         var menu = $("#menu-content");
+ 
+ 
+         abrir.click(function(){
+             menu.addClass('active');
+         });
+         cerrar.click(function(){
+             menu.removeClass('active');
+         });
+       });
+ </script>
+
+ <!--Copiar enlaze web-->
+<script>
+  document.getElementById('compartir').addEventListener('click', function() {
+    // Define el enlace a copiar
+    let link = 'https://trb-pere-alemany.vercel.app/';
+    copyToClipboard(link);
+});
+
+function copyToClipboard(text) {
+    // Crea un elemento de entrada temporal para copiar el texto
+    let tempInput = document.createElement('input');
+    var noti = $("#noti-enlaze");
+    tempInput.value = text;
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    tempInput.setSelectionRange(0, 99999); // Para dispositivos móviles
+    document.execCommand('copy');
+    document.body.removeChild(tempInput);
+    noti.removeClass('off')
+    setTimeout(function() {
+    noti.addClass("off");
+  }, 5000);
+}
+</script>
+<!--Reportar errores-->
+<script>
+document.getElementById('email').addEventListener('click', function() {
+    // Define los parámetros del correo
+    let recipient = 'p_alemanyt@a.iescalvia.com'; // Cambia esto por el correo del destinatario
+    let subject = 'Report Error WEB';
+    let body = 'He trobat un error en la web "TRB | Dron amb Cap mòbil LED"';
+
+    // Crea el enlace mailto
+    let mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    // Abre Gmail con el enlace mailto
+    window.location.href = mailtoLink;
+});
+
+</script>
