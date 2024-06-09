@@ -269,19 +269,4 @@ function copyToClipboard(text) {
   }, 5000);
 }
 </script>
-<!--Reportar errores-->
-<script>
-document.getElementById('email').addEventListener('click', function() {
-    // Define los parámetros del correo
-    let recipient = 'p_alemanyt@a.iescalvia.com'; // Cambia esto por el correo del destinatario
-    let subject = 'Report Error WEB';
-    let body = 'He trobat un error en la web "TRB | Dron amb Cap mòbil LED"';
 
-    // Crea el enlace mailto
-    let mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-
-    // Abre Gmail con el enlace mailto
-    window.location.href = mailtoLink;
-});
-
-</script>
