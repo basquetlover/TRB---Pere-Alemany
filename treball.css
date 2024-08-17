@@ -1574,33 +1574,7 @@ a::after {
 
  
 
-  .resum{
-    margin: 20px 0;
-    width: 90%;
-    height: auto;
-    overflow: unset;
-    position: relative;
-
   
-      h3{
-       
-        font-size: 30px;
-        color: var(--naranja_oscuro);
-      }
-      
-      p{
-        width: 95%;
-        font-size: 18px;
-        color: var(--blanco);
-        display: flex;
-        flex-direction: column;
-        
-    
-        span{
-          margin: 5px 0;
-        }
-      }
-    }
   
     .portada-mobile{
         width: 100%;
